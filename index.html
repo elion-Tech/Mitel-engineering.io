@@ -35,6 +35,44 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+        /* Logo Styles */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+        }
+        .logo-img {
+            max-height: 50px;
+        }
+        .logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-main-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            color: #03041c;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .logo-sub-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 9px;
+            color: #666;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        /* Footer specific overrides */
+        .footer-main .logo-main-text {
+            color: #ffffff;
+        }
+        .footer-main .logo-sub-text {
+            color: #cccccc;
+        }
     </style>
 </head>
 
@@ -51,11 +89,11 @@
                         <!-- tmp nav area -->
                         <div class="tmp-nav-area-one header--sticky">
                             <div class="logo-area-start">
-                                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                                    <img src="assets/images/logo/logo.png" alt="logo" style="max-height: 50px;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #03041c; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #666; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+                                <a href="index.html" class="logo-link">
+                                    <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                                    <div class="logo-text-wrapper">
+                                        <span class="logo-main-text">Mitel</span>
+                                        <span class="logo-sub-text">Engineering Services Ltd</span>
                                     </div>
                                 </a>
                             </div>
@@ -85,11 +123,6 @@
                                  </ul> 
                                 </nav>
                             </div>
-
-                            <div class="input-area">
-                                <input type="text" placeholder="Search...">
-                                <i class="fa-light fa-magnifying-glass"></i>
-                            </div>
                             <div class="actions-area">
                                 <!-- <div class="menu-button" id="search">
                                 <i class="fa-light fa-grid-2"></i>
@@ -100,21 +133,6 @@
                                         <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
                                         <rect width="20" height="2" fill="#1F1F25"></rect>
                                     </svg>
-                                </div>
-                                <div class="language-picker">
-                                    <div class="js">
-                                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
-                                            <form action="#" class="language-picker__form">
-                                                <label for="language-picker-select">Select your language</label>
-                                                <select name="language-picker-select" id="language-picker-select">
-                                                    <option lang="de" value="deutsch">Deutsch</option>
-                                                    <option lang="en" value="english" selected>English</option>
-                                                    <option lang="fr" value="francais">Français</option>
-                                                    <option lang="it" value="italiano">Italiano</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
@@ -132,11 +150,11 @@
 
     <div id="side-hide">
         <div class="top-area">
-            <a href="index.html" class="logo-area" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                <img src="assets/images/logo/logo.png" alt="logo" style="max-height: 50px;">
-                <div style="display: flex; flex-direction: column;">
-                    <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #03041c; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                    <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #666; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+            <a href="index.html" class="logo-area logo-link">
+                <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-main-text">Mitel</span>
+                    <span class="logo-sub-text">Engineering Services Ltd</span>
                 </div>
             </a>
             <div class="close-icon-area">
@@ -319,8 +337,8 @@
                 <!-- single swiper area start -->
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next" data-tmp-cursor="lg transparent fw-bold" data-tmp-cursor-text="Next"></div>
-            <div class="swiper-button-prev" data-tmp-cursor="lg transparent fw-bold" data-tmp-cursor-text="Prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
     <!-- tmp banner area end -->
@@ -342,7 +360,7 @@
                                 <div class="dot dot-two"></div>
                             </div>
                         </div>
-                        <a href="service-details.html" class="over_link"></a>
+                        <a href="project-slider.html" class="over_link"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
@@ -360,7 +378,7 @@
                                 <div class="dot dot-two"></div>
                             </div>
                         </div>
-                        <a href="service-details.html" class="over_link"></a>
+                        <a href="project-slider.html" class="over_link"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
@@ -378,7 +396,7 @@
                                 <div class="dot dot-two"></div>
                             </div>
                         </div>
-                        <a href="service-details.html" class="over_link"></a>
+                        <a href="project-slider.html" class="over_link"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
@@ -396,7 +414,7 @@
                                 <div class="dot dot-two"></div>
                             </div>
                         </div>
-                        <a href="service-details.html" class="over_link"></a>
+                        <a href="project-slider.html" class="over_link"></a>
                     </div>
                 </div>
             </div>
@@ -591,7 +609,7 @@
                                 <div class="dot dot-two"></div>
                             </div>
                         </div>
-                        <a href="service-details.html" class="over_link"></a>
+                        <a href="project-slider.html" class="over_link"></a>
                     </div>
                 </div>
             </div>
@@ -1082,11 +1100,11 @@
                     <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                         <div class="single-footer-wrapper border-right mr--20">
                             <div class="logo">
-                                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                                    <img src="assets/images/logo/logo-01.png" alt="logo" style="max-height: 50px;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #ffffff; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #cccccc; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+                                <a href="index.html" class="logo-link">
+                                    <img src="assets/images/logo/logo-01.png" alt="logo" class="logo-img">
+                                    <div class="logo-text-wrapper">
+                                        <span class="logo-main-text">Mitel</span>
+                                        <span class="logo-sub-text">Engineering Services Ltd</span>
                                     </div>
                                 </a>
                             </div>
@@ -1121,11 +1139,11 @@
                                 </li>
                             
                                 <li>
-                                    <a href="service.htmlj">Our Services</a>
+                                    <a href="project-slider.html">Our Services</a>
                                 </li>
                              
                                 <li>
-                                    <a href="contact.htmlj">Contact Us</a>
+                                    <a href="contact.html">Contact Us</a>
                                 </li>
 
 
@@ -1196,7 +1214,7 @@
 
 
 
-    <div id="overlay_every-where" data-tmp-cursor="md text-black dark:text-white opacity-10" data-tmp-cursor-icon="fa-regular fa-x fa-fw"></div>
+    <div id="overlay_every-where"></div>
 
     <!-- progress area start -->
     <div class="progress-wrap">
@@ -1267,10 +1285,10 @@
 
     <script src="assets/js/plugins/gsap.js"></script>
     <script src="assets/js/plugins/splittext.js"></script>
-    <script src="assets/js/plugins/scrolltigger.js"></script>
+    <script src="assets/js/plugins/scrolltigger.js"></script><!-- 
     <script src="assets/js/plugins/scrolltoplugins.js"></script>
 
-    <script src="assets/js/plugins/cursor.js"></script>
+    <script src="assets/js/plugins/cursor.js"></script> -->
     <script src="assets/js/vendor/metismenu.js"></script>
     <!-- bootstrap Js-->
     <script src="assets/js/vendor/bootstrap.min.js"></script>

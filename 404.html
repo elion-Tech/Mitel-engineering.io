@@ -35,6 +35,37 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+        /* Logo Styles */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+        }
+        .logo-img {
+            max-height: 50px;
+        }
+        .logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-main-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            color: #03041c;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .logo-sub-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 9px;
+            color: #666;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 
@@ -48,11 +79,11 @@
                     <div class="main-header-one-wrapper">
                         <div class="tmp-nav-area-one header--sticky">
                             <div class="logo-area-start">
-                                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                                    <img src="assets/images/logo/logo.png" alt="logo" style="max-height: 50px;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #03041c; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #666; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+                                <a href="index.html" class="logo-link">
+                                    <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                                    <div class="logo-text-wrapper">
+                                        <span class="logo-main-text">Mitel</span>
+                                        <span class="logo-sub-text">Engineering Services Ltd</span>
                                     </div>
                                 </a>
                             </div>
@@ -86,11 +117,11 @@
 
     <div id="side-hide">
         <div class="top-area">
-            <a href="index.html" class="logo-area" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                <img src="assets/images/logo/logo.png" alt="logo" style="max-height: 50px;">
-                <div style="display: flex; flex-direction: column;">
-                    <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #03041c; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                    <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #666; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+            <a href="index.html" class="logo-area logo-link">
+                <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-main-text">Mitel</span>
+                    <span class="logo-sub-text">Engineering Services Ltd</span>
                 </div>
             </a>
             <div class="close-icon-area">
@@ -247,11 +278,11 @@
                     <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                         <div class="single-footer-wrapper border-right mr--20">
                             <div class="logo">
-                                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-                                    <img src="assets/images/logo/logo-01.png" alt="logo" style="max-height: 50px;">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 24px; color: #ffffff; line-height: 1; text-transform: uppercase; letter-spacing: -0.5px;">Mitel</span>
-                                        <span style="font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 9px; color: #cccccc; letter-spacing: 0.5px; text-transform: uppercase;">Engineering Services Ltd</span>
+                                <a href="index.html" class="logo-link">
+                                    <img src="assets/images/logo/logo-01.png" alt="logo" class="logo-img">
+                                    <div class="logo-text-wrapper">
+                                        <span class="logo-main-text" style="color: #ffffff;">Mitel</span>
+                                        <span class="logo-sub-text" style="color: #cccccc;">Engineering Services Ltd</span>
                                     </div>
                                 </a>
                             </div>
@@ -284,21 +315,9 @@
                                 <li>
                                     <a href="about.html">About Company</a>
                                 </li>
-                                <li>
-                                    <a href="team.html">Meet Our Team</a>
-                                </li>
-                                <li>
-                                    <a href="service.html">Our Services</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html">News & Media</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
 
                                 <li>
-                                    <a href="faq.html">Support</a>
+                                    <a href="contact.html">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -389,7 +408,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="main-wrapper">
-                        <p>© Copyright 2024. All Rights Reserved by <a href="#">Themes-Park</a></p>
+                        <p>© Copyright 2024. All Rights Reserved by <a href="#">Mitel Engineering</a></p>
                     </div>
                 </div>
             </div>
@@ -401,7 +420,7 @@
 
 
 
-    <div id="overlay_every-where" data-tmp-cursor="md text-black dark:text-white opacity-10" data-tmp-cursor-icon="fa-regular fa-x fa-fw"></div>
+    <div id="overlay_every-where"></div>
 
     <!-- progress area start -->
     <div class="progress-wrap">
@@ -472,10 +491,10 @@
 
     <script src="assets/js/plugins/gsap.js"></script>
     <script src="assets/js/plugins/splittext.js"></script>
-    <script src="assets/js/plugins/scrolltigger.js"></script>
+    <script src="assets/js/plugins/scrolltigger.js"></script><!-- 
     <script src="assets/js/plugins/scrolltoplugins.js"></script>
 
-    <script src="assets/js/plugins/cursor.js"></script>
+    <script src="assets/js/plugins/cursor.js"></script> -->
     <script src="assets/js/vendor/metismenu.js"></script>
     <!-- bootstrap Js-->
     <script src="assets/js/vendor/bootstrap.min.js"></script>
