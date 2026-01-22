@@ -272,21 +272,25 @@
             })
         },
         preloader: function() {
-            var e = !1;
+            // Hide scrollbar while preloader is active
+            $('body').css('overflow', 'hidden');
 
-            function o() {
-                if (!e) {
-                    e = !0;
-                    $("#themes-park-preloader").addClass("loaded");
-                    $("#preloader").css({ transition: "opacity 0.5s ease", opacity: 0 });
-                    setTimeout(() => {
-                        $("#preloader").remove();
-                        $('body').css('overflow-y', 'auto');
-                        ScrollTrigger.refresh();
-                    }, 500);
+            // Hide preloader after a short delay to improve perceived performance.
+            // This avoids getting stuck if window.load is delayed by heavy assets.
+            setTimeout(function() {
+                if ($("#preloader").length) {
+                    $("#preloader").fadeOut(500, function() {
+                        $(this).remove();
+                        $('body').css('overflow', '');
+                    });
                 }
-            }
-            $(window).on("load", o), setTimeout(o, 1e3)
+            }, 1500);
+
+            // After everything is fully loaded (including images), refresh ScrollTrigger.
+            // This corrects any layout shifts that happened after the preloader was removed.
+            $(window).on('load', function() {
+                ScrollTrigger.refresh(true);
+            });
         },
         smoothScroll: function(e) {
             $(document).on('click', '.onepage a[href^="#"]', function(event) {
