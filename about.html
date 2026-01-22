@@ -59,6 +59,21 @@
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
+        .hero-card {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 50px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            text-align: left;
+        }
+        @media (max-width: 767px) {
+            .hero-card {
+                padding: 25px 20px;
+            }
+        }
     </style>
 </head>
 
@@ -213,15 +228,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner text-start">
-                        <h1 class="title split-collab" style="font-size: 50px; margin-bottom: 20px;">About Mitel Engineering</h1>
-                        <p class="description" style="color: #ffffff; font-size: 18px; max-width: 600px; margin-bottom: 30px;">
-                            Delivering world-class engineering projects across Nigeria’s civil, building, marine, and oil & gas sectors since 2014.
-                        </p>
-                        <ul class="page-list">
-                            <li class="tmp-breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="icon"><i class="fa-solid fa-angle-right"></i></li>
-                            <li class="tmp-breadcrumb-item active">About Us</li>
-                        </ul>
+                        <div class="hero-card">
+                            <h1 class="title" style="font-size: 50px; margin-bottom: 20px; color: #ffffff;">About Mitel Engineering</h1>
+                            <p class="description" style="color: #e0e0e0; font-size: 18px; max-width: 600px; margin-bottom: 30px;">
+                                Delivering world-class engineering projects across Nigeria’s civil, building, marine, and oil & gas sectors since 2014.
+                            </p>
+                            <ul class="page-list">
+                                <li class="tmp-breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="icon"><i class="fa-solid fa-angle-right"></i></li>
+                                <li class="tmp-breadcrumb-item active">About Us</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
