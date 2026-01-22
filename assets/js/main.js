@@ -281,6 +281,7 @@
                     $("#preloader").css({ transition: "opacity 0.5s ease", opacity: 0 });
                     setTimeout(() => {
                         $("#preloader").remove();
+                        $('body').css('overflow-y', 'auto');
                         ScrollTrigger.refresh();
                     }, 500);
                 }
@@ -297,7 +298,6 @@
         },
         title_animation: function() {
             if (device_width > 991) {
-                gsap.registerPlugin(ScrollTrigger);
                 $(document).ready(function() {
                     let addAnimation = function() {
                         $(".split-collab").each(function(index) {
@@ -765,7 +765,6 @@
             })
         },
         counterJumpanimation: function() {
-            gsap.registerPlugin(ScrollTrigger);
             gsap.set(".counter_animation .counter__anim", {
                 y: -100,
                 opacity: 0,
