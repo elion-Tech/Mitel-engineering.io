@@ -22,8 +22,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        html, body {
+        html {
             overflow-x: hidden;
+        }
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        @media (max-width: 767px) {
+            .banner-one-height-control {
+                height: auto !important;
+                padding-top: 150px !important;
+                padding-bottom: 100px !important;
+            }
         }
         /* Logo Styles */
         .logo-link {
@@ -1187,7 +1198,7 @@
             </div>
         </div>
     </footer>
-    <div class="copyright-area-one" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
+    <div class="copyright-area-one">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

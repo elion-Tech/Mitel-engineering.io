@@ -291,6 +291,9 @@
             $(window).on('load', function() {
                 ScrollTrigger.refresh(true);
             });
+            $(window).on('resize', function() {
+                ScrollTrigger.refresh();
+            });
         },
         smoothScroll: function(e) {
             $(document).on('click', '.onepage a[href^="#"]', function(event) {
