@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo-01.png">
     <title>Mitel - Page Not Found</title>
 
 
@@ -20,7 +20,85 @@
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        /* Logo Styles */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+        }
+        .logo-img {
+            max-height: 40px;
+        }
+        .logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-main-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            color: #03041c;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .logo-sub-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 9px;
+            color: #666;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .hero-card {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 50px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            text-align: left;
+        }
+        @media (max-width: 767px) {
+            .hero-card {
+                padding: 25px 20px;
+            }
+        }
+        /* Global Reductions */
+        :root { --bs-body-font-size: 1rem; }
+        body { font-size: var(--bs-body-font-size); }
+        
+        /* Header & Nav */
+        .logo-main-text { font-size: 24px !important; }
+        .logo-sub-text { font-size: 11px !important; }
+        .header-nav .nav-link { font-size: 16px !important; padding: 0 12px !important; }
+        .tmp-btn { padding: 12px 24px !important; font-size: 16px !important; }
+
+        /* Spacing */
+        .tmp-section-gap { padding-top: 80px !important; padding-bottom: 80px !important; }
+        .tmp-section-gapTop { padding-top: 80px !important; }
+        .tmp-section-gapBottom { padding-bottom: 80px !important; }
+        
+        /* Cards & Boxes */
+        .service-inner, .single-services .services-inner, .single-team .content, .single-blog, .about-inner { padding: 30px !important; }
+        .service-inner .title, .single-services .title { font-size: 22px !important; }
+        .service-inner .description, .single-services .description { font-size: 16px !important; }
+        
+        /* Footer */
+        .footer-area { padding-top: 70px !important; padding-bottom: 30px !important; }
+        .single-footer-wrapper .logo { margin-bottom: 25px !important; }
+    </style>
 </head>
 
 <body>
@@ -34,7 +112,7 @@
                         <div class="tmp-nav-area-one header--sticky">
                             <div class="logo-area-start">
                                 <a href="index.html" class="logo-link">
-                                    <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                                    <img src="assets/images/logo/logo-01.png" alt="logo" class="logo-img">
                                     <div class="logo-text-wrapper">
                                         <span class="logo-main-text">Mitel</span>
                                         <span class="logo-sub-text">Engineering Services Ltd</span>
@@ -72,7 +150,7 @@
     <div id="side-hide">
         <div class="top-area">
             <a href="index.html" class="logo-area logo-link">
-                <img src="assets/images/logo/logo.png" alt="logo" class="logo-img">
+                <img src="assets/images/logo/logo-01.png" alt="logo" class="logo-img">
                 <div class="logo-text-wrapper">
                     <span class="logo-main-text">Mitel</span>
                     <span class="logo-sub-text">Engineering Services Ltd</span>
@@ -320,7 +398,7 @@
                         <div class="single-footer-wrapper">
                             <h5 class="ft-title">Official info:</h5>
                             <ul class="ft-link">
-                                <li class="ft-location">3, Idiagbon close, Port Harcourt<br>5, David Ikutegbe close, Warri<br>10 Muhammed Abu Ali Cresecent, Abuja</li>
+                                <li class="ft-location">5, David Ikutegbe close, Warri<br>5A Calabar StGarki, Abuja 900103, FCT Nigeria</li>
 
                                 <li>
                                     <div class="single-contact">

@@ -20,7 +20,86 @@
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        /* Logo Styles */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+        }
+        .logo-img {
+            max-height: 50px;
+        }
+        .logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-main-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            color: #03041c;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .logo-sub-text {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 9px;
+            color: #666;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .hero-card {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 50px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            text-align: left;
+        }
+        @media (max-width: 767px) {
+            .hero-card {
+                padding: 25px 20px;
+            }
+        }
+        /* Global Reductions */
+        :root { --bs-body-font-size: 1rem; }
+        body { font-size: var(--bs-body-font-size); }
+        
+        /* Header & Nav */
+       
+        .logo-main-text { font-size: 24px !important; }
+        .logo-sub-text { font-size: 11px !important; }
+        .header-nav .nav-link { font-size: 16px !important; padding: 0 12px !important; }
+        .tmp-btn { padding: 12px 24px !important; font-size: 16px !important; }
+
+        /* Spacing */
+        .tmp-section-gap { padding-top: 80px !important; padding-bottom: 80px !important; }
+        .tmp-section-gapTop { padding-top: 80px !important; }
+        .tmp-section-gapBottom { padding-bottom: 80px !important; }
+        
+        /* Cards & Boxes */
+        .service-inner, .single-services .services-inner, .single-team .content, .single-blog, .about-inner { padding: 30px !important; }
+        .service-inner .title, .single-services .title { font-size: 22px !important; }
+        .service-inner .description, .single-services .description { font-size: 16px !important; }
+        
+        /* Footer */
+        .footer-area { padding-top: 70px !important; padding-bottom: 30px !important; }
+        .single-footer-wrapper .logo { margin-bottom: 25px !important; }
+    </style>
 </head>
 
 <body>
@@ -225,18 +304,6 @@
                                         <i class="fa-regular fa-map-location-dot"></i>
                                     </div>
                                     <div class="content">
-                                        <span>Port Harcourt Office</span>
-                                        <p style="margin-bottom: 0;">Solomon Iyobosa Edebiri, Ph.D, JP, MON, KSJI.<br>3, Idiagbon close, Off Idiagbon Street, GRA phase 3, Port Harcourt, Rivers State.<br><a href="tel:+2348033084842">+234 803 308 4842</a></p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="single-contact background-transparent">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-map-location-dot"></i>
-                                    </div>
-                                    <div class="content">
                                         <span>Warri Office</span>
                                         <p style="margin-bottom: 0;">Sir David Ikutegbe<br>5, David Ikutegbe close, Off Nehemiah school Okoukoko, Warri, Delta state.<br><a href="tel:+2348158635804">+234 815 863 5804</a>, <a href="tel:+15149961059">+1 (514-996-1059)</a></p>
                                     </div>
@@ -250,7 +317,7 @@
                                     </div>
                                     <div class="content">
                                         <span>Abuja Office</span>
-                                        <p style="margin-bottom: 0;">Mitedere Ikutegbe, ESQ<br>10 Muhammed Abu Ali Cresecent, Jahi, Abuja.<br><a href="tel:+2348035559537">+234 803 555 9537</a>, <a href="tel:+14372456505">+1 (437-245-6505)</a></p>
+                                        <p style="margin-bottom: 0;">Mitedere Ikutegbe, ESQ<br>5A Calabar StGarki, Abuja 900103, FCT Nigeria<br><a href="tel:+2348035559537">+234 803 555 9537</a>, <a href="tel:+14372456505">+1 (437-245-6505)</a></p>
                                     </div>
                                 </div>
                             </li>
@@ -403,7 +470,7 @@
                         <div class="single-footer-wrapper">
                             <h5 class="ft-title">Official info:</h5>
                             <ul class="ft-link">
-                                <li class="ft-location">3, Idiagbon close, Port Harcourt<br>5, David Ikutegbe close, Warri<br>10 Muhammed Abu Ali Cresecent, Abuja</li>
+                                <li class="ft-location">5, David Ikutegbe close, Warri<br>5A Calabar StGarki, Abuja 900103, FCT Nigeria</li>
 
 
                                 <li>

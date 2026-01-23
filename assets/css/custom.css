@@ -1,0 +1,109 @@
+/* Global Overrides */
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: var(--bs-body-font-size);
+}
+:root { --bs-body-font-size: 1rem; }
+
+/* Logo Styles */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+.logo-img {
+    max-height: 40px;
+}
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.logo-main-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 24px !important;
+    color: #03041c;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.logo-sub-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 11px !important;
+    color: #666;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Footer Logo Overrides */
+.footer-main .logo-main-text {
+    color: #ffffff !important;
+}
+.footer-main .logo-sub-text {
+    color: #cccccc !important;
+}
+
+/* Header & Nav */
+.tmp-header-area-start { padding: 15px 0 !important; }
+.header-nav .nav-link { font-size: 16px !important; padding: 0 12px !important; }
+.tmp-btn { padding: 12px 24px !important; font-size: 16px !important; }
+
+/* Hero Card (Glassmorphism) */
+.hero-card {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    text-align: left;
+}
+@media (max-width: 767px) {
+    .hero-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Hero/Banner (Index) */
+.banner-one-height-control { min-height: 650px !important; padding-top: 160px !important; padding-bottom: 100px !important; }
+.banner-one-main-wrapper { text-align: center !important; display: flex; flex-direction: column; align-items: center; }
+.banner-one-main-wrapper .inner { max-width: 900px; margin: 0 auto; }
+.banner-one-main-wrapper .title { font-size: 52px !important; margin-bottom: 20px !important; line-height: 1.2 !important; }
+.banner-one-main-wrapper .disc { font-size: 18px !important; margin-bottom: 35px !important; max-width: 800px; margin-left: auto; margin-right: auto; }
+
+@media (max-width: 767px) {
+    .banner-one-height-control {
+        height: auto !important;
+        padding-top: 150px !important;
+        padding-bottom: 100px !important;
+    }
+}
+
+/* Spacing */
+.tmp-section-gap { padding-top: 80px !important; padding-bottom: 80px !important; }
+.tmp-section-gapTop { padding-top: 80px !important; }
+.tmp-section-gapBottom { padding-bottom: 80px !important; }
+
+/* Cards & Boxes */
+.service-inner, .single-services .services-inner, .single-team .content, .single-blog, .about-inner { padding: 30px !important; }
+.service-inner .title, .single-services .title { font-size: 22px !important; }
+.service-inner .description, .single-services .description { font-size: 16px !important; }
+
+/* Footer Area */
+.footer-area { padding-top: 70px !important; padding-bottom: 30px !important; }
+.single-footer-wrapper .logo { margin-bottom: 25px !important; }
+
+/* Preloader Blue Theme */
+.themes-park-preloader .animation-preloader .spinner {
+    border-top-color: #1273EB;
+}
+.themes-park-preloader .animation-preloader .txt-loading .letters-loading {
+    color: #1273EB;
+}
